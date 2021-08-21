@@ -60,18 +60,13 @@ const getTasks = async () => {
       task.description = input.value;
       updateTask(task);
     });
-    input.addEventListener("focus", () => {
-      saveBtn.classList.add("save__btnDispay");
-    });
-    input.addEventListener("focus", () => {
-      saveBtn.classList.remove("save__btnDisplayOff");
-    });
     input.addEventListener("blur", () => {
-      saveBtn.classList.add("save__btnDisplayOff");
+      saveBtn.classList.replace("save__btnDispay", "save__btnDisplayOff");
     });
     input.addEventListener("focus", () => {
-      saveBtn.classList.remove("save__btnDispay");
+      saveBtn.classList.replace("save__btnDisplayOff","save__btnDispay" );
     });
+  
 
     //Create Delete Button
     const delBtn = document.createElement("button");
