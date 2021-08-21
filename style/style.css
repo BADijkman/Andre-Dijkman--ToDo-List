@@ -1,0 +1,69 @@
+body {
+  background-color: #bdc5b5;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+main {
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+}
+
+#newTask {
+  font-size: 25px;
+  height: 30px;
+  width: 300px;
+}
+
+#task__input {
+  margin-left: 46px;
+}
+
+.input__text {
+  height: 20px;
+  font-size: 20px;
+  color: rgb(98, 89, 140);
+  margin: 2px 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.checkbox {
+  width: 20px;
+}
+
+.container__output ul li input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-bottom-style: hidden;
+  border-left-style: hidden;
+}
+
+.line-through {
+  color: coral;
+  text-decoration: line-through;
+}
+
+.trash__btn {
+  color: red;
+}
+
+.save__btn {
+  color: green;
+}
+
+.save__btnDispay {
+  display: inline;
+}
+
+.save__btnDisplayOff {
+  display: none;
+}
