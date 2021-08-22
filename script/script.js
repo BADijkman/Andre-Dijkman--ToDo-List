@@ -48,6 +48,9 @@ const getTasks = async () => {
         updateTask(task);
       }
     });
+    input.addEventListener("focus", () => {
+      saveBtn.classList.replace("save__btnDisplayOff","save__btnDispay" );
+    });
 
     // //Create Save Button
     const saveBtn = document.createElement("button");
