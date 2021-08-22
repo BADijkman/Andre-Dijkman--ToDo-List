@@ -49,7 +49,7 @@ const getTasks = async () => {
       }
     });
     input.addEventListener("focus", () => {
-      saveBtn.classList.replace("save__btnDisplayOff","save__btnDispay" );
+      saveBtn.classList.replace("save__btnDisplayOff", "save__btnDispay");
     });
 
     // //Create Save Button
