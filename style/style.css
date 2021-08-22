@@ -59,11 +59,3 @@ li {
 .save__btn {
   color: green;
 }
-
-.save__btnDispay {
-  display: inline;
-}
-
-.save__btnDisplayOff {
-  display: none;
-}

@@ -56,17 +56,11 @@ const getTasks = async () => {
     const saveIcon = document.createElement("i");
     saveIcon.className = "fa fa-check save__btn";
     saveBtn.appendChild(saveIcon);
+
     saveBtn.addEventListener("click", () => {
       task.description = input.value;
       updateTask(task);
     });
-    input.addEventListener("blur", () => {
-      saveBtn.classList.replace("save__btnDispay", "save__btnDisplayOff");
-    });
-    input.addEventListener("focus", () => {
-      saveBtn.classList.replace("save__btnDisplayOff","save__btnDispay" );
-    });
-  
 
     //Create Delete Button
     const delBtn = document.createElement("button");

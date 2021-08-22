@@ -2,7 +2,7 @@ const endPoint = "http://localhost:3000/";
 
 //GET
 const getData = async () => {
-  const requestOptionsGet = {
+  requestOptionsGet = {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   };
