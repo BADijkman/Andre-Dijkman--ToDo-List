@@ -8,6 +8,10 @@ const getData = async () => {
   };
   try {
     const res = await fetch(endPoint, requestOptionsGet);
+    if (!res.ok) {
+      const message = `An error has occured: status ${res.status}`;
+      throw new Error(message);
+    }
     return await res.json();
   } catch (error) {
     console.log(error);
@@ -23,6 +27,10 @@ const postData = async (task) => {
   };
   try {
     const res = await fetch(endPoint, requestOptionsPost);
+    if (!res.ok) {
+      const message = `An error has occured: status ${res.status}`;
+      throw new Error(message);
+    }
     return await res.json();
   } catch (error) {
     console.log(error);
@@ -38,6 +46,10 @@ const updateData = async (id, task) => {
   };
   try {
     const res = await fetch(`${endPoint}${id}`, requestOptionsPut);
+    if (!res.ok) {
+      const message = `An error has occured: status ${res.status}`;
+      throw new Error(message);
+    }
     return await res.json();
   } catch (error) {
     console.log(error);
@@ -52,6 +64,11 @@ const deleteData = async (id) => {
   };
   try {
     const res = await fetch(`${endPoint}${id}`, requestOptionsDel);
+    console.log (res)
+    if (!res.ok) {
+      const message = `An error has occured: status ${res.status}`;
+      throw new Error(message);
+    }
   } catch (error) {
     console.log(error);
   }
